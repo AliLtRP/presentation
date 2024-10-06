@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project Presentation</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+            scroll-behavior: smooth;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+
+        h1,
+        h2,
+        h3 {
+            color: #333;
+        }
+
+        section {
+            height: 100vh;
+            overflow: hidden;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 0;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            opacity: 0;
+            transition: opacity 0.5s ease-in-out;
+        }
+
+        .swiper-container {
+            height: 100vh;
+            width: 100vw;
+        }
+
+        section.active {
+            opacity: 1;
+        }
+
+        a {
+            color: #007BFF;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        .no-padding {
+            padding: 0px !important;
+        }
+    </style>
+</head>
+
+<body>
+    <section id="project-description">
+        <h2>Project Description</h2>
+        <p style="text-align: center;">The project is a to-do list application that allows users to create, manage, and
+            track tasks effectively.
+            Users can add tasks, mark them as completed, and delete them as needed, providing a straightforward way to
+            organize their daily activities. The interface is user-friendly and designed for easy navigation, making
+            task management simple and efficient.</p>
+    </section>
+
+    <section id="screenshots" class="no-padding">
+        <div class="swiper-container">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <img src="./media/Screenshot 2024-10-06 at 9.40.41 PM.png"
+                        style="height: 100%; width: 100%; object-fit: fill;" alt="Screenshot 1 Description"
+                        loading="lazy">
+                </div>
+                <div class="swiper-slide">
+                    <img src="./media/Screenshot 2024-10-06 at 9.41.17 PM.png"
+                        style="height: 100%; width: 100%; object-fit: fill;" alt="Screenshot 2 Description"
+                        loading="lazy">
+                </div>
+                <div class="swiper-slide">
+                    <img src="./media/Screenshot 2024-10-06 at 9.41.41 PM.png"
+                        style="height: 100%; width: 100%; object-fit: fill;" alt="Screenshot 3 Description"
+                        loading="lazy">
+                </div>
+                <div class="swiper-slide">
+                    <img src="./media/Screenshot 2024-10-06 at 9.41.58 PM.png"
+                        style="height: 100%; width: 100%; object-fit: fill;" alt="Screenshot 4 Description"
+                        loading="lazy">
+                </div>
+                <div class="swiper-slide">
+                    <img src="./media/Screenshot 2024-10-06 at 9.43.09 PM.png"
+                        style="height: 100%; width: 100%; object-fit: fill;" alt="Screenshot 5 Description"
+                        loading="lazy">
+                </div>
+                <div class="swiper-slide">
+                    <img src="./media/Screenshot 2024-10-06 at 9.44.52 PM.png"
+                        style="height: 100%; width: 100%; object-fit: fill;" alt="Screenshot 6 Description"
+                        loading="lazy">
+                </div>
+                <div class="swiper-slide">
+                    <img src="./media/Screenshot 2024-10-06 at 9.46.38 PM.png"
+                        style="height: 100%; width: 100%; object-fit: fill;" alt="Screenshot 7 Description"
+                        loading="lazy">
+                </div>
+            </div>
+            <div class="swiper-pagination"></div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+        </div>
+    </section>
+
+    <section id="features">
+        <h2>Features</h2>
+        <ul>
+            <li><strong>Kanban View</strong>: Organize tasks visually into columns to track progress efficiently.</li>
+            <li><strong>Task Prioritization</strong>: Set task priorities to focus on the most critical items first.
+            </li>
+            <li><strong>Localization</strong>: Multi-language support powered by i18next for a broader user base.</li>
+            <li><strong>Material UI Integration</strong>: Sleek, responsive design components for an enhanced user
+                experience.</li>
+            <li><strong>State Management</strong>: Redux integration for managing global state seamlessly.</li>
+        </ul>
+    </section>
+
+    <section id="technologies">
+        <h2>Technologies and Techniques Used</h2>
+        <p>This project utilizes various tools and libraries, including:</p>
+        <ul>
+            <li><strong>React</strong>: A JavaScript library for building user interfaces.</li>
+            <li><strong>Redux</strong>: Manages the application’s state across different components.</li>
+            <li><strong>TypeScript</strong>: A typed superset of JavaScript that enhances code quality and scalability.
+            </li>
+            <li><strong>Vite</strong>: A fast development build tool.</li>
+            <li><strong>Material UI</strong>: Provides pre-designed React components based on Material Design.</li>
+            <li><strong>Tailwind CSS</strong>: A utility-first CSS framework for styling the UI.</li>
+        </ul>
+    </section>
+
+    <section id="upcoming-features">
+        <h2>Upcoming Features</h2>
+        <p>We plan to implement the following features in the future:</p>
+        <ul>
+            <li><strong>List View</strong>: In addition to the existing Kanban view, we will introduce a list view for
+                easier task management.</li>
+            <li><strong>Notifications</strong>: Real-time notifications for task updates and deadlines.</li>
+            <li><strong>Collaboration Tools</strong>: Improved features for team collaboration, such as commenting and
+                task assignments.</li>
+        </ul>
+    </section>
+
+    <section id="links">
+        <h2>Links</h2>
+        <p>Check out the project on GitHub and the live web app:</p>
+        <ul>
+            <li><a href="https://github.com/AliLtRP/to-do-akkooo.git" target="_blank">GitHub Repository</a></li>
+            <li><a href="https://to-do-akkooo-req.netlify.app/" target="_blank">Live Web App</a></li>
+        </ul>
+    </section>
+
+    <script>
+        const sections = document.querySelectorAll('section');
+        let currentSectionIndex = 0;
+        const maxSections = sections.length;
+
+        const scrollToSection = (index) => {
+            sections.forEach((section, idx) => {
+                section.classList.toggle('active', idx === index);
+            });
+            sections[index].scrollIntoView({ behavior: 'smooth' });
+        };
+
+        document.addEventListener('keydown', (event) => {
+            if (event.key === 'ArrowDown') {
+                event.preventDefault();
+                if (currentSectionIndex < maxSections - 1) {
+                    currentSectionIndex++;
+                }
+                scrollToSection(currentSectionIndex);
+            } else if (event.key === 'ArrowUp') {
+                event.preventDefault();
+                if (currentSectionIndex > 0) {
+                    currentSectionIndex--;
+                }
+                scrollToSection(currentSectionIndex);
+            } else if (event.key === 'ArrowRight') {
+                event.preventDefault();
+                swiper.slideNext();
+            } else if (event.key === 'ArrowLeft') {
+                event.preventDefault();
+                swiper.slidePrev();
+            }
+        });
+
+        sections[currentSectionIndex].classList.add('active');
+        scrollToSection(currentSectionIndex);
+    </script>
+
+    <script>
+        const swiper = new Swiper('.swiper-container', {
+            slidesPerView: 1,
+            spaceBetween: 10,
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+            },
+            loop: true,
+        });
+    </script>
+</body>
+
+</html>
